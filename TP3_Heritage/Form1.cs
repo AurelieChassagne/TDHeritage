@@ -36,5 +36,10 @@ namespace TP3_Heritage
 
             dgvComptes.Rows.Add(compte.NumCompte,compte.NomTitulaire,compte.SoldeCompte,compte.Versement,compte.Ouverture);
         }
+
+        private void dgvComptes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

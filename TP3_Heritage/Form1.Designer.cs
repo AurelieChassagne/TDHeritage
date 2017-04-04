@@ -34,15 +34,15 @@
             this.lblVersementMensuel = new System.Windows.Forms.Label();
             this.btnCreerCompte = new System.Windows.Forms.Button();
             this.dgvComptes = new System.Windows.Forms.DataGridView();
-            this.txBNumCompte = new System.Windows.Forms.TextBox();
-            this.txBNomTitulaire = new System.Windows.Forms.TextBox();
-            this.txBSoldeInitial = new System.Windows.Forms.TextBox();
-            this.txbVersementMensuel = new System.Windows.Forms.TextBox();
             this.NumCompte = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NomTitulaire = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoldeCompte = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Versement = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ouverture = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txBNumCompte = new System.Windows.Forms.TextBox();
+            this.txBNomTitulaire = new System.Windows.Forms.TextBox();
+            this.txBSoldeInitial = new System.Windows.Forms.TextBox();
+            this.txbVersementMensuel = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvComptes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,6 +110,32 @@
             this.dgvComptes.Name = "dgvComptes";
             this.dgvComptes.Size = new System.Drawing.Size(544, 150);
             this.dgvComptes.TabIndex = 5;
+            this.dgvComptes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvComptes_CellContentClick);
+            // 
+            // NumCompte
+            // 
+            this.NumCompte.HeaderText = "Numéro de Compte";
+            this.NumCompte.Name = "NumCompte";
+            // 
+            // NomTitulaire
+            // 
+            this.NomTitulaire.HeaderText = "Nom du Titulaire";
+            this.NomTitulaire.Name = "NomTitulaire";
+            // 
+            // SoldeCompte
+            // 
+            this.SoldeCompte.HeaderText = "Solde du Compte";
+            this.SoldeCompte.Name = "SoldeCompte";
+            // 
+            // Versement
+            // 
+            this.Versement.HeaderText = "Versement";
+            this.Versement.Name = "Versement";
+            // 
+            // Ouverture
+            // 
+            this.Ouverture.HeaderText = "Ouverture";
+            this.Ouverture.Name = "Ouverture";
             // 
             // txBNumCompte
             // 
@@ -138,31 +164,6 @@
             this.txbVersementMensuel.Name = "txbVersementMensuel";
             this.txbVersementMensuel.Size = new System.Drawing.Size(100, 20);
             this.txbVersementMensuel.TabIndex = 9;
-            // 
-            // NumCompte
-            // 
-            this.NumCompte.HeaderText = "Numéro de Compte";
-            this.NumCompte.Name = "NumCompte";
-            // 
-            // NomTitulaire
-            // 
-            this.NomTitulaire.HeaderText = "Nom du Titulaire";
-            this.NomTitulaire.Name = "NomTitulaire";
-            // 
-            // SoldeCompte
-            // 
-            this.SoldeCompte.HeaderText = "Solde du Compte";
-            this.SoldeCompte.Name = "SoldeCompte";
-            // 
-            // Versement
-            // 
-            this.Versement.HeaderText = "Versement";
-            this.Versement.Name = "Versement";
-            // 
-            // Ouverture
-            // 
-            this.Ouverture.HeaderText = "Ouverture";
-            this.Ouverture.Name = "Ouverture";
             // 
             // FrmCompteEpargneLogement
             // 
